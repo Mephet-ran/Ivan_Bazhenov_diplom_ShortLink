@@ -8,4 +8,4 @@ urlpatterns = [
     path('', views.LoginView.as_view(template_name='regist/login.html'), name='login'),
     path('exit/', views.LogoutView.as_view(template_name='regist/exit.html'), name='exit'),
 ]
-123
+
