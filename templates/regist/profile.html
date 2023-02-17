@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block main %}
+   <div class="">
+      <div class="form-register">
+          <div class="group-1">
+        <h1 class="">Кабинет пользователя</h1>
+          <p><b>@{{ user.username }}</b></p>
+          <p><b>Email:</b>{{ user.email }}</p>
+          <a href="{% url 'exit' %}"><button type="button" class="btn">Выйти из пользователя</button></a>
+              </div>
+          <h1 class="">Изменить данные пользователя</h1>
+        <form method="POST" class="">
+        {% csrf_token %}
+            {{ update.as_p  }}
+            <div class="group-1">
+        <button class="btn btn-submit" type="submit">Обновить</button>
+            </div>
+    </form>
+      </div>
+    </div>
+{% endblock %}

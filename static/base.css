@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-register{
+    display: block;
+    padding: 20px;
+    background: darkgrey;
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto;
+    margin-top: 10%;
+
+}
+.form-register .helptext{
+    color: black;
+}
+.form-register h1{
+    text-align: center;
+    margin: 20px;
+}
+.form-register ul.errorlist{
+    font-weight: bold;
+}
+.form-register input{
+    display: block;
+    width: 96%;
+    margin-top: 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 2%;
+}
+.group-1{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+.btn{
+    background: black;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+.header{
+    background: #4ac1f7;
+    display: flex;
+    width: 100%;
+}
+.header h2{
+    margin: 10px 20px;
+}
+.btn-group{
+    position: absolute;
+    right: 10px;
+}
+.form-short{
+    display: block;
+    width: 600px;
+    background: burlywood;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.form-short input{
+    display: block;
+    width: 96%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 1%;
+    margin: auto;
+    margin-top: 5px;
+}
+.container{
+    background: #de8d61;
+}
+.form-short h1
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-short ul{
+    margin-left: 40%;
+}
+.form-short a{
+    font-size: 20px;
+}
+.form-short ul.errorlist{
+    font-weight: bold;
+}
+.footer{
+    background: #4ac1f7;
+    padding: 1%;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    left: 0;
+    text-align: center;
+}
+.home{
+    width: 600px;
+    margin: auto;
+    margin-top: 10%;
+    background: #1e913e;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.home h1, .home h3{
+    text-align: center;
+    margin: 10px;
+}
+.exit{
+    width: 600px;
+    margin: auto;
+    margin-top: 10%;
+    background: #f5dd5d;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.exit h1{
+    margin-bottom: 20px;
+}
+a, a:visited, a:active {
+color: blue;
+}

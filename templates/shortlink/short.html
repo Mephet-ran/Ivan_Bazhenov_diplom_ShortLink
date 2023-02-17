@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="form-short">
+      <div class="">
+        <h1 class="">Создание короткой ссылки</h1>
+        <form method="POST" enctype="multipart/form-data" class="">
+        {% csrf_token %}
+        {{ form.as_p  }}
+            <div class="group-1">
+        <button class="btn btn-submit" type="submit">Создать</button>
+            </div>
+        </form>
+      </div>
+        <div>
+        <h1>Список коротких ссылок</h1>
+            <ul>
+                {% for el in links %}
+
+                    <li><a target="_blank"  href="{{ el.link }}">/link/{{ el.word }}</a></li>
+
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+{% endblock %}
